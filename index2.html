@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX Giphy Button Review</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">"
+  <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body id="wholeThing">
+
+<div class="jumbotron" id="header">
+  <img id="topImageL" src="assets/images/donewell.webp">
+  <img id="topImageR" src="assets/images/fear.webp class=">
+  <h1>Another Star Wars Theme<br>
+    <img src="assets/images/starwarslogo.jpg" height="400" width="600" class="img-responsive center-block"></h1>
+  <h4>Click the buttons to display GIPHYs of your favorite Star Wars moments<br>Click the GIPHYs to pause and play<br>Search to add more buttons!</h4>
+</div>
+
+<form class="form-inline" id="starwarsSearch">
+  <div class="form-group">
+    <label for="starwarsInput">Search for a Star Wars Gif</label>
+    <input type="text" id="starwarsInput">
+  </div>
+  <!-- Button triggers show to be added -->
+  <input id="addShow" type="submit" value="submit">
+</form>
+
+<div class="row">
+  <div class="container">
+    <div class="btn-group inline pull-left">
+      <button class="btn btn-primary" id="show" data-search="A New Hope">A New Hope</button>
+      <button class="btn btn-primary" id="show" data-search="Empire Strikes Back">Empire Strikes Back</button>
+      <button class="btn btn-primary" id="show" data-search="Return of the Jedi">Return of the Jedi</button>
+      <button class="btn btn-primary" id="show" data-search="Revenge of the Sith">Revenge of the Sith</button>
+
+      <div id="myButtons"></div>
+    </div> <!--end of button group -->
+  </div> <!--end of container -->
+</div> <!--end of row -->
+
+
+<div class="row">
+  <div class="container">
+      <span><div id="gifArea"></div></span>
+  </div> <!--end of container -->
+</div> <!-- end of row  -->
+
+
+<script type="text/javascript" src="assets/javascript/giphy2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</body>
+</html>
